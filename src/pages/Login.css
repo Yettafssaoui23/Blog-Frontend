@@ -1,0 +1,14 @@
+.login__bg--container {
+    background-image: url('../images/pexels-worldspectrum-1097946.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.login-cont {
+    margin-top: 2rem;
+}
+
+.login__form {
+    width: 90%;
+    margin: 0 auto;
+}

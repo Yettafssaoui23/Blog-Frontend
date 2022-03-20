@@ -1,14 +1,15 @@
 import React from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import './Login.css'; 
 
 function Login() {
   return (
-    <Container>
+    <Container className="login-cont">
       <Row>
-        <Col md={7}>
-          <h1>Login</h1>
-          <Form>
+        <Col md={7} className="d-flex align-items-center justify-content-center">
+          <Form className="login__form">
+            <h1>Login</h1>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" />
