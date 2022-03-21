@@ -29,7 +29,7 @@ function Signup() {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
             </Form.Group>
-            <Button variant="success" type="submit">
+            <Button variant="dark" type="submit">
               Login to your Account
             </Button>
             <div className="py-4">

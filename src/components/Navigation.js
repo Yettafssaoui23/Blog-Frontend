@@ -1,23 +1,29 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import {Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import logo from '../images/logo.png';
 
 function Navigation() {
   return (
-    <Navbar bg="warning" expand="lg">
+    <Navbar bg="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>
+            <img src={logo} style={{ width: 120 }} />
+          </Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <LinkContainer to="/">
-                <Nav.Link>Home</Nav.Link>
+                <Nav.Link className="text-white">Home</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/login">
-                <Nav.Link className="btn btn-success text-white">Login</Nav.Link>
+                <Nav.Link className="text-white">Login</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/signup">
-                <Nav.Link>Sign Up</Nav.Link>
+                <Nav.Link className="text-white">Sign Up</Nav.Link>
             </LinkContainer>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
