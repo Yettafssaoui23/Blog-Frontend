@@ -1,9 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Signup from "./pages/Signup";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,14 @@
+.signup__bg--container {
+    background-image: url('../../images/pexels-rodnae-productions-8369838.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.signup-cont {
+    margin-top: 2rem;
+}
+
+.signup__form {
+    width: 90%;
+    margin: 0 auto;
+}
